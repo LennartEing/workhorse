@@ -23,6 +23,7 @@ function openOptionsPage() {
 		url: '/options/options.html',
 	});
 	creating.then(onCreated, onError);
+	window.close();
 
 }
 

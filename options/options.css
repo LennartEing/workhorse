@@ -32,6 +32,20 @@ body {
 	position: relative;
 }
 
+.tabs {
+	width: 95%;
+	padding: 15px 15px 15px 15px;
+	margin: auto;
+	position: relative;
+}
+
+.tablinks {
+	width: auto;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+	position: relative;
+}
+
 #content-div {
 	width: 90%;
 	border: 2px solid red;

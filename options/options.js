@@ -85,8 +85,4 @@ loadBlacklists()
 document.querySelector('#new-blacklist-button').addEventListener('click', newBlacklist);
 document.querySelector('#blacklist-close-button').addEventListener('click', closeBlacklist);
 document.querySelector('#blacklist-name').addEventListener('input', listenForNameChange);
-var activationButtons = document.querySelectorAll('.activation-button');
-var i;
-for(i = 0; i < activationButtons.length; i++) {
-  activaionButtons[i].addEventListener('click', de_activate);
-}
+document.querySelectorAll('.activation-button').addEventListener('click', de_activate);
