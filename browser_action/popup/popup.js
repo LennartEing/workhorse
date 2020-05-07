@@ -23,6 +23,12 @@ function openOptionsPage() {
 		url: '/options/options.html',
 	});
 	creating.then(onCreated, onError);
+
 }
 
-openOptionsPage();
+function addToActiveBlacklists() {
+
+}
+
+document.querySelector('#open-options-button').addEventListener('click', openOptionsPage);
+document.querySelector('#add-button').addEventListener('click', addToActiveBlacklists);
