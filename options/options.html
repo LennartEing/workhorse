@@ -7,7 +7,25 @@
 	</head>
 
 <body>
-	<p> THIS IS THE OPTIONS PAGE </p>
+
+	<!-- These are the different tabs of Blacklists. -->
+	<div id="blacklist-tabs" class="tab">
+		<button id="new-blacklist-button" class="tablinks">+</button>
+	</div>
+
+	<div id="content-div" hidden>
+		<div id="blacklist-content">
+			<div>
+				<label for="blacklist-name" class="blacklist-content">Name:</label>
+				<input name="blacklist-name" id="blacklist-name" maxlength="15" class="blacklist-content">
+			</div>
+			<div>
+				<label for="from-time-input" class="blacklist-content">From:</label>
+				<input name="from-time-input" id="from-time-input" type="time" class="blacklist-content" type="text">
+			</div>
+		</div>
+		<button id="blacklist-close-button" class="close-button">X</button>
+	</div>
 
 	<script src="options.js"></script>
 </body>
