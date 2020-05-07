@@ -15,15 +15,36 @@
 
 	<div id="content-div" hidden>
 		<div id="blacklist-content">
-			<div>
+			<div class="blacklist-content-container">
 				<label for="blacklist-name" class="blacklist-content">Name:</label>
-				<input name="blacklist-name" id="blacklist-name" maxlength="15" class="blacklist-content">
+				<input name="blacklist-name" id="blacklist-name" type="text" maxlength="15" class="blacklist-content">
 			</div>
-			<div>
+			<div class="blacklist-content-container">
 				<label for="from-time-input" class="blacklist-content">From:</label>
-				<input name="from-time-input" id="from-time-input" type="time" class="blacklist-content" type="text">
+				<input name="from-time-input" id="from-time-input" type="time" class="blacklist-content">
+				<label for="to-time-input" class="blacklist-content">To:</label>
+				<input name="to-time-input" id="to-time-input" type="time" class="blacklist-content">
+			</div>
+			<div class="blacklist-content-container">
+				<label for="monday-input" class="blacklist-content">Monday:</label>
+				<input name="monday-input" id="monday-input" type="radio" class="blacklist-content">
+				<label for="tuesday-input" class="blacklist-content">Tuesday:</label>
+				<input name="tuesday-input" id="tuesday-input" type="radio" class="blacklist-content">
+				<label for="wednesday-input" class="blacklist-content">Wednesday:</label>
+				<input name="wednesday-input" id="wednesday-input" type="radio" class="blacklist-content">
+				<label for="thursday-input" class="blacklist-content">Thursday:</label>
+				<input name="thursday-input" id="thursday-input" type="radio" class="blacklist-content">
+				<label for="friday-input" class="blacklist-content">Friday:</label>
+				<input name="friday-input" id="friday-input" type="radio" class="blacklist-content">
+				<label for="saturday-input" class="blacklist-content">Saturday:</label>
+				<input name="saturday-input" id="saturday-input" type="radio" class="blacklist-content">
+				<label for="sunday-input" class="blacklist-content">Sunday:</label>
+				<input name="sunday-input" id="sunday-input" type="radio" class="blacklist-content">
 			</div>
 		</div>
+
+		<button id="deactivate-button" class="activation-button">Deactivate</button>
+		<button id="activate-button"	class="activation-button">Activate</button>
 		<button id="blacklist-close-button" class="close-button">X</button>
 	</div>
 
