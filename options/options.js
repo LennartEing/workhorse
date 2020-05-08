@@ -70,6 +70,15 @@ function listenForNameChange(event) {
   activeTab.innerHTML = calculateNewName();
 }
 
+function listenForBlacklistInput(event) {
+
+  var regex = /,(?!\n)/g;
+  var content = document.querySelector('#blacklist').value;
+  content = content.replace(regex, ',\n');
+  document.querySelector('#blacklist').value = content;
+
+}
+
 /**
 * This function gets called when the activate or deactivate button gets clicked.
 */
@@ -85,4 +94,4 @@ loadBlacklists()
 document.querySelector('#new-blacklist-button').addEventListener('click', newBlacklist);
 document.querySelector('#blacklist-close-button').addEventListener('click', closeBlacklist);
 document.querySelector('#blacklist-name').addEventListener('input', listenForNameChange);
-document.querySelectorAll('.activation-button').addEventListener('click', de_activate);
+document.querySelector('#blacklist').addEventListener('input', listenForBlacklistInput);
